@@ -2,8 +2,16 @@
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
+html{
+    scroll-behavior: smooth !important;
+}
+
+:target {
+    scroll-margin-top: .8em;
+  }
 
 .font-size{
     font-family: 'Roboto', sans-serif;
@@ -29,9 +37,14 @@ header {
 }
 
 a{
-    color: blanchedalmond;
+    color: blanchedalmond !important;
     font-weight: bolder;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:hover{
+    color: #FDFD96 !important;
 }
 
 body h1{
@@ -57,6 +70,7 @@ body h1{
     padding: 5px;
     border-radius: 5px;
     margin: 4px;
+    text-align: center;
 }
 
 .subforum-desc *{
